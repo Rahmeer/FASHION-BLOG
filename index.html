@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/8c90b2ed06.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="top">
+            <h1><a href="#">what the flex box</a></h1>
+        </header>
+
+        <nav class="flex-nav">
+            <a href="#" class="toggleNav">Menu</a>
+            <ul>
+                <li><a href="#">item 1</a></li>
+                <li><a href="#">item 2</a></li>
+                <li><a href="#">item 3</a></li>
+                <li><a href="#">item 4</a></li>
+                <li><a href="#">item 5</a></li>
+                <li><a href="#">item 6</a></li>
+                <li class="social"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-github"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                <li class="social"><a href="#"><i class="fa fa-twitter "></i></a></li>
+
+            </ul>
+        </nav>
+
+        <section class="hero">
+            <img src="map.jpg" alt="">
+        </section>
+
+        <section class="details">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, quam!</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, molestiae.</p>
+        </section>
+
+        <section class="signup">
+            <form action="" class="signup">
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="submit" placeholder="Sign me up">
+            </form>
+        </section>
+
+        <footer>
+            <p>&copy;what ever</p>
+        </footer>
+    </div>    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script>
+    
+        $(function() {
+          $('.toggleNav').on('click',function() {
+            $('.flex-nav ul').toggleClass('open');
+          });
+        });
+    
+    </script>
+</body>
+</html>
